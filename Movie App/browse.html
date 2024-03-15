@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        video {
+            height: 33rem;
+            width: 100%;
+        }
+
+
+        .links-container {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25242b;
+            padding: 1rem 0;
+
+        }
+
+        .navbar {
+            position: sticky;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 999;
+        }
+
+        .links-container .link a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.4rem 1rem;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        .links-container .link a:hover {
+            background-color: #581515;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: black;
+            padding: 0.3rem 0;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer p {
+            color: #fff;
+            margin-bottom: 0%;
+
+            height: 25px;
+
+        }
+
+        .footer p {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="links-container">
+            <li class="link"><a href="index.html">🏡 home</a></li>
+            <li class="link"><a href="movies.html">🎬 movies</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <video controls>
+            <source src="C:\Users\emran\Desktop\index.soha\800a10dc7f810dab64149f94dca2167b24078360-360p.mp4">
+        </video>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 soha haidari </p>
+    </footer>
+</body>
+
+</html>

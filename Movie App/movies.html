@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+
+    <style>
+        body {
+            background-color: rgb(20, 19, 19);
+            min-height: 100vh;
+            position: relative;
+
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .links-container {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25242b;
+            padding: 1rem 0;
+            position: sticky;
+            width: 100%;
+
+        }
+
+        .links-container .link a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.4rem 1rem;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        .links-container .link a:hover {
+            background-color: #581515;
+        }
+
+
+
+        .top {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .ing {
+            background-color: rgb(29, 31, 33);
+            border: 1.5px solid #fdf9f9;
+            width: 320px;
+            height: 330px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+            transition: all .3s;
+            padding: 0.8rem 0;
+        }
+
+        .ing img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            text-decoration: none;
+            opacity: 0;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .info h3 {
+            color: #fff;
+            margin: 0.8rem 0 0.4rem 0;
+            font-size: 1.4rem;
+        }
+
+        .info p {
+            color: #0f1f79;
+            font-weight: bolder;
+            font-size: 1.1rem;
+        }
+
+        .ing:hover .play-icon {
+            opacity: 1;
+        }
+
+        .ing:hover {
+            transform: scale(1.025);
+        }
+
+        #container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        #top-container {
+            text-align: center;
+
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #fff;
+            background: transparent;
+            color: #fff;
+        }
+
+        .button:hover {
+            color: #000;
+            background: #fff;
+        }
+
+        .button:hover a {
+            color: #000;
+        }
+
+
+        .button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #17191b;
+            padding: 0.8rem 0;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        .footer p {
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul class="links-container">
+            <li class="link"><a href="index.html">🏡home</a></li>
+            <li class="link"><a href="movies.html">🎬 movies</a></li>
+        </ul>
+    </nav>
+
+    <div class="img-container">
+
+        <div class="top">
+            <div class="ing">
+                <img src="titanic.jpg" alt="">
+                <div class="info">
+                    <h3>movie title</h3>
+                    <p>Score: 8.5</p>
+                </div>
+                <a href="movie-detail.html" class="play-icon">▶</a>
+            </div>
+
+            <div class="ing">
+                <img src="48332646-3771-b__4929.jpg" alt="">
+                <div class="info">
+                    <h3>movie title</h3>
+                    <p>Score: 8.5</p>
+                </div>
+                <a href="movie-detail.html" class="play-icon">▶</a>
+            </div>
+
+            <div class="ing">
+                <img src="Fury_2.jpg" alt="">
+                <div class="info">
+                    <h3>movie title</h3>
+                    <p>Score: 8.5</p>
+                </div>
+                <a href="movie-detail.html" class="play-icon">▶</a>
+            </div>
+
+            <div class="ing">
+                <img src="FDXo-720X404.jpg" alt="">
+
+                <div class="info">
+                    <h3>movie title</h3>
+                    <p>Score: 8.5</p>
+
+                </div>
+                <a href="movie-detail.html" class="play-icon">▶</a>
+            </div>
+
+            <div class="ing">
+                <img src="mov_9789_1-b.jpg" alt="">
+                <div class="info">
+                    <h3>movie title</h3>
+                    <p>Score: 8.5</p>
+                </div>
+                <a href="movie-detail.html" class="play-icon">▶</a>
+            </div>
+
+            <div class="ing">
+                <img src="titanic.jpg" alt="">
+                <div class="info">
+                    <h3>movie title</h3>
+                    <p>Score: 8.5</p>
+                </div>
+                <a href="movie-detail.html" class="play-icon">▶</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <div class="container">
+            <button class="button button-prev">
+                << </button>
+                    <button class="button button-page">
+                        <a class="link" href="page-netion.html">1</a>
+                    </button>
+
+                    <button class="button button-page">
+                        <a class="link" href="page-netion.html">2</a>
+                    </button>
+
+                    <button class="button button-page">
+                        <a class="link" href="page-netion.html">3</a>
+                    </button>
+
+                    <button class="button button-next"> >> </button>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <footer class="footer">
+        <p>© 2024 soha haidari </p>
+
+    </footer>
+</body>
+
+</html>
